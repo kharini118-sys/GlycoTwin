@@ -9,12 +9,11 @@
 | Field | Value |
 |---|---|
 | **Project Title** | GlycoTwin — Personalized Bio-Digital Twin for 2-Hour Glucose Excursion Risk Prediction |
-| **Team Leader** | [INSERT TEAM LEADER NAME] |
-| **Team Members** | [INSERT STUDENT 1], [INSERT STUDENT 2], [INSERT STUDENT 3] |
-| **Institution** | [INSERT COLLEGE / INSTITUTE / INCUBATOR NAME] |
-| **Contact Email** | [INSERT EMAIL ADDRESS] |
-| **GitHub Repository** | [INSERT PUBLIC REPOSITORY URL] |
-| **Demo Video** | [INSERT YOUTUBE UNLISTED / GOOGLE DRIVE LINK] |
+| **Team Leader** | [HARINI K] |
+| **Institution** | [VEL TECH HIGH TECH DR RANGARAJAN DR SAKUNTHALA ENGINEERING COLLEGE] |
+| **Contact Email** | [harini.career2026@gmail.com] |
+| **GitHub Repository** | [https://github.com/kharini118-sys/GlycoTwin] |
+| **Demo Video** | [https://drive.google.com/file/d/1dU47QjeKTdtz2JYKRXbIddhZDF_Z3wtD/view?usp=sharing] |
 | **License** | [MIT License](./LICENSE) (code) + [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) (dataset) |
 | **Submission Deadline** | 20 October 2026, 7:00 PM IST |
 
