@@ -10,6 +10,7 @@
 |---|---|
 | **Project Title** | GlycoTwin — Personalized Bio-Digital Twin for 2-Hour Glucose Excursion Risk Prediction |
 | **Team Leader** | [HARINI K] |
+| **Team Name** | SheCanDo it! |
 | **Institution** | [VEL TECH HIGH TECH DR RANGARAJAN DR SAKUNTHALA ENGINEERING COLLEGE] |
 | **Contact Email** | [harini.career2026@gmail.com] |
 | **GitHub Repository** | [https://github.com/kharini118-sys/GlycoTwin] |
