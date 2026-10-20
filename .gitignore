@@ -1,0 +1,115 @@
+# ── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+.env/
+
+# ── Environment variables & secrets ──────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.secret
+
+# ── Raw dataset (NEVER commit) ────────────────────────────────────────────────
+# CGMacros v1.0.0 is licensed CC BY-NC-SA 4.0.
+# Raw participant data (CGM CSVs, food photos, clinical labs) must never be
+# committed to any public repository.
+data/raw/
+data/raw/**
+*.zip
+
+# ── Derived feature arrays (CC BY-NC-SA 4.0 — large files) ──────────────────
+# data/processed/*.npy are derived from CGMacros (CC BY-NC-SA 4.0) and are
+# large (25+ MB each). They are excluded by default to prevent accidental
+# public redistribution without satisfying share-alike obligations.
+# To include them, uncomment the lines below ONLY after confirming your
+# use complies with CC BY-NC-SA 4.0 and you have added proper attribution.
+data/processed/X_sequence.npy
+data/processed/X_sequence_processed.npy
+data/processed/X_static.npy
+data/processed/X_static_processed.npy
+data/processed/subjects.npy
+data/processed/y.npy
+data/processed/train_mask.npy
+data/processed/val_mask.npy
+data/processed/test_mask.npy
+data/processed/metadata.csv
+
+# ── User database (contains hashed passwords & workspaces) ───────────────────
+instance/
+instance/*.db
+instance/*.db-shm
+instance/*.db-wal
+
+# ── Python cache ──────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# ── Pytest / test cache ───────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ── Jupyter notebooks ─────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Editor and OS ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Build / packaging ─────────────────────────────────────────────────────────
+build/
+dist/
+*.egg-info/
+*.egg
+*.whl
+
+# ── Streamlit cache ───────────────────────────────────────────────────────────
+.streamlit/secrets.toml
+
+# ── Model artifacts (CC BY-NC-SA 4.0 — legal status under review) ────────────
+# Models trained on CGMacros data likely inherit CC BY-NC-SA 4.0 constraints
+# (non-commercial, share-alike). They are excluded by default pending legal
+# confirmation. To distribute them, remove the entries below AND add the
+# required CC BY-NC-SA 4.0 attribution notice in your repository.
+#
+# The production model used by the app is:
+#   models/glycotwin_logistic_calibrated.pkl
+#
+# The normalisation statistics (sequence_*.npy, static_*.npy) and GRU
+# checkpoints (*.pt) are also derived from CC BY-NC-SA 4.0 training data.
+#
+# UNCOMMENT the lines below to commit these artifacts:
+models/*.pkl
+models/*.pt
+models/glycotwin_random_forest.pkl
+models/glycotwin_gru.pt
+models/glycotwin_gru_corrected.pt
+models/glycotwin_gru_v2.pt
+models/sequence_means.npy
+models/sequence_medians.npy
+models/sequence_stds.npy
+models/static_means.npy
+models/static_medians.npy
+models/static_stds.npy
+
+# ── Temporary files ───────────────────────────────────────────────────────────
+*.tmp
+*.temp
+*.log
+*.bak
+
+# ── Presentation exports (keep source, not large binaries optionally) ─────────
+# presentation/*.pdf  ← uncomment if you want to exclude generated PDFs
+

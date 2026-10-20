@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "glycotwin"
+version = "0.1.0"
+description = "GlycoTwin: Personalized Bio-Digital Twin for 2-Hour Glucose Excursion Risk Prediction"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+keywords = ["digital-twin", "diabetes", "glucose", "cgm", "machine-learning", "healthcare"]
+
+dependencies = [
+    "numpy>=1.24.0,<2.0",
+    "pandas>=2.0.0",
+    "scikit-learn>=1.2.0",
+    "joblib>=1.2.0",
+    "streamlit>=1.25.0",
+    "scipy>=1.10.0",
+    "plotly>=5.0.0",
+    "argon2-cffi>=21.3.0",
+    "reportlab>=3.6.0",
+    "python-pptx>=0.6.21",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --tb=short"
+filterwarnings = [
+    "ignore::sklearn.exceptions.InconsistentVersionWarning",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*", "app*"]
+
+[tool.setuptools.package-data]
+"*" = ["*.pkl", "*.pt", "*.npy", "*.csv"]
